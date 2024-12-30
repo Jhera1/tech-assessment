@@ -8,6 +8,10 @@
 //   vowels('Coding Money') --> 4
 //   vowels('why?') --> 0 
 
-function vowels(str) {}
+function vowels(str) {
+   matches = str.match(/[aeiou]/gi)
+   console.log(matches)
+   return matches ? matches.length : 0
+}
 
 console.log(vowels('Coding Money'));
