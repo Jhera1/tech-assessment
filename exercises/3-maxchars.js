@@ -10,12 +10,12 @@ function maxChar(str) {
    let maxChar = ''
    let max = 0
    for (let char of str) {
-    charMap[char] = charMap[char] + 1 || 1
+    charMap[char] = charMap + 1 || 1
    }
    for (let key in charMap) {
     if (charMap[key] > max) {
-        max = charMap[key]
-        maxChar = key
+        maxChar = charMap[key]
+        max = key
     }
    }
    return maxChar
