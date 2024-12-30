@@ -5,4 +5,7 @@
 //   reverse('hello') === 'olleh'
 //   reverse('CodingMoney') === 'yenoMgnidoC'
 
-function reverse(str) {}
+function reverse(str) {
+    return str.split('').reverse().join('')
+}
+console.log(reverse('Somewhere in Time'))

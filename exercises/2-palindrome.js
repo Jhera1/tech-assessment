@@ -8,5 +8,11 @@
 //   palindrome("madam") === true
 //   palindrome("codingmoney") === false
 
-function palindrome(str) {}
+// function palindrome(str) {
 
+// }
+
+const palindrome = str => str.toLowerCase().split('').reverse().join('') === str.toLowerCase()
+console.log(palindrome("kayak"))
+console.log(palindrome("Suppus"))
+console.log(palindrome("Somewhere in Time"))
