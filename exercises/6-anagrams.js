@@ -8,7 +8,10 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
-function anagrams(stringA, stringB) {}
+const cleanString = str => str.toLowerCase().replace(/[\W]/g, '').split('').sort().join('')
+function anagrams(stringA, stringB) {
+    return cleanString(stringA) === cleanString(stringB)
+}
 
 
 console.log(anagrams('RAIL! SAFETY!', 'fairy tales'));
